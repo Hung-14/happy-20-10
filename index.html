@@ -472,36 +472,51 @@
     <script>
         // --- 1. DANH SÁCH 10 LỜI CHÚC ĐA DẠNG PHONG CÁCH (TỰ ĐỘNG ĐỔI MỖI LẦN MỞ QUÀ) ---
         const wishesPool = [
-            // Phong cách 1: Dịu dàng, truyền thống
-            "Nhân ngày 20/10, chúc {name} luôn rạng rỡ như những đóa hoa mùa thu, giữ mãi nụ cười tỏa nắng trên môi và luôn được yêu thương, chiều chuộng mỗi ngày nhé! 🌸",
-            
-            // Phong cách 2: Ngắn gọn, hiện đại, năng lượng tích cực
-            "Hôm nay là ngày của {name} đó! Chúc cậu 365 ngày đều xinh đẹp, tự tin, độc lập và luôn lấp lánh theo cách riêng tuyệt vời nhất của chính mình! ✨💖",
-            
-            // Phong cách 3: Hài hước, đáng yêu
-            "Thông báo khẩn nhân dịp 20/10: Chúc {name} nhan sắc thăng hạng vù vù, tiền tiêu rủng rỉnh, ăn ngon không sợ béo và lúc nào cũng yêu đời hết nấc nha! 🎁🌷",
-            
-            // Phong cách 4: Thơ mộng, sâu sắc
-            "Thế giới này dịu dàng và rực rỡ hơn rất nhiều vì có những bông hoa như {name}. Mong rằng mọi điều tốt đẹp, bình yên và ngọt ngào nhất sẽ luôn tìm đến bên cậu hôm nay và cả những ngày sau. 💌",
-            
-            // Phong cách 5: Ngọt ngào, ấm áp
-            "Gửi ngàn lời chúc tốt đẹp nhất đến {name} trong ngày 20/10! Hãy gác lại mọi âu lo để tận hưởng một ngày thật trọn vẹn, hạnh phúc và ngập tràn những bất ngờ dễ thương nhé! 🥰",
-            
-            // Phong cách 6: Tinh tế, khích lệ
-            "20/10 thật vui vẻ nhé {name}! Cảm ơn cậu vì đã luôn dịu dàng, tỏa sáng và mang lại năng lượng tích cực cho mọi người xung quanh. Chúc mọi ước mơ của cậu sớm thành hiện thực! 🌺✨",
-            
-            // Phong cách 7: Bay bổng, lãng mạn
-            "Chẳng cần đợi đến 20/10 thì {name} mới xứng đáng được nâng niu, nhưng hôm nay là dịp đặc biệt để nhắc rằng: Cậu vô cùng tuyệt vời! Chúc cậu luôn bình an và ngập tràn hạnh phúc! 💐💖",
-            
-            // Phong cách 8: Trẻ trung, vui tươi
-            "Happy Women's Day 20/10! Chúc {name} mỗi sáng thức dậy đều thấy lòng phơi phới, đi đến đâu cũng gặp may mắn, làm gì cũng suôn sẻ và luôn giữ mãi nét đáng yêu này nhé! 🎀🌸",
-            
-            // Phong cách 9: Chân thành, gần gũi
-            "Nhân ngày Phụ nữ Việt Nam 20/10, chúc {name} luôn giữ được trái tim ấm áp, đôi mắt biết cười và tâm hồn tự do tự tại. Mong cậu mỗi ngày đều tìm thấy thật nhiều niềm vui nhỏ bé! 🌷✨",
-            
-            // Phong cách 10: Rực rỡ, chúc phúc trọn vẹn
-            "Món quà nhỏ này mang theo lời chúc 20/10 đặc biệt gửi tới {name}: Chúc cậu luôn tươi trẻ như hoa đầu mùa, hạnh phúc đong đầy và luôn là phiên bản rạng rỡ, kiêu hãnh nhất! 👑💝"
-        ];
+    // 1. Sâu lắng, chân thành
+    "Nhân ngày Phụ nữ Việt Nam 20/10, chúc {name} của anh luôn giữ được sự an yên trong tâm hồn, nụ cười luôn rạng rỡ trên môi và bước đi thật vững vàng trên con đường đã chọn. Mong rằng tất cả những điều dịu dàng và tốt đẹp nhất của cuộc sống này sẽ luôn ưu ái dành riêng cho em. 🌸✨",
+
+    // 2. Ngọt ngào, lãng mạn
+    "Thế giới ngoài kia có bao nhiêu điều vội vã và áp lực, nhưng khi bước vào thế giới của {name}, mọi thứ lại trở nên thật bình yên và ấm áp. Cảm ơn sự hiện diện của em đã mang lại màu sắc tươi mới cho cuộc sống này. Chúc bông hoa nhỏ của anh có một ngày 20/10 thật trọn vẹn, ngập tràn hoa hồng và những yêu thương ngọt ngào nhất! 🌹💖",
+
+    // 3. Trân trọng, động viên
+    "Gửi {name} thân yêu! Chúc cậu một ngày 20/10 thật nhiều niềm vui và hạnh phúc. Cậu biết không, sự kiên cường, tấm lòng ấm áp và năng lượng tích cực của cậu luôn khiến mọi người xung quanh phải nể phục và trân trọng. Chúc cho mọi dự định, ước mơ của cậu trong tương lai đều sẽ nở hoa rực rỡ! 🌷💌",
+
+    // 4. Nhẹ nhàng, tinh tế
+    "Tháng 10 mang theo những cơn gió se lạnh, và sự xuất hiện của {name} chính là ánh nắng ấm áp nhất sưởi ấm mọi không gian. Chúc {name} nhân ngày 20/10 sẽ luôn giữ được nét duyên dáng, sự tự tin và lòng kiêu hãnh của riêng mình. Mong rằng mỗi ngày trôi qua với em đều là một ngày hội ngập tràn tiếng cười. 🌺💐",
+
+    // 5. Ấm áp, tri kỷ
+    "Không chỉ riêng ngày 20/10, mà mong rằng 365 ngày trong năm {name} đều sẽ được yêu thương, chiều chuộng và bao bọc trong sự chân thành. Chúc cậu luôn khỏe mạnh, giữ mãi làn da thanh xuân, ánh mắt biết cười và một trái tim luôn đong đầy nhiệt huyết với cuộc đời. Thương chúc mọi điều bình an sẽ đến bên {name}! ☕️🌸",
+
+    // 6. Truyền cảm hứng, tích cực
+    "Phụ nữ sinh ra là để được yêu thương và trân trọng, và {name} chính là minh chứng tuyệt vời cho điều đó. Nhân dịp 20/10, chúc cậu luôn kiêu hãnh như đóa hoa hướng dương luôn hướng về phía mặt trời, tự tin tỏa sáng rực rỡ theo cách mà mình muốn và không phải bận tâm về bất kỳ điều gì ngoài hạnh phúc! 🌻✨",
+
+    // 7. Thơ mộng, sâu sắc
+    "Người ta thường nói thanh xuân của người con gái rất ngắn ngủi, thế nên mong rằng từng khoảnh khắc đi qua cuộc đời {name} đều rực rỡ và đáng nhớ như những đóa hoa mùa thu. Chúc em ngày 20/10 tràn ngập hoa quà, nhưng quan trọng nhất là luôn có một người đủ chân thành để nắm tay em đi qua mọi giông bão cuộc đời. 🍃🌷",
+
+    // 8. Chân thành, quan tâm
+    "Hôm nay là một ngày đặc biệt dành riêng cho một người đặc biệt — {name}. Chúc em gác lại hết những lo toan, bộn bề của công việc ngoài kia để tận hưởng trọn vẹn sự ngọt ngào, cưng chiều trong ngày hôm nay. Chúc {name} mãi trẻ trung, xinh đẹp, bình an và luôn tìm thấy niềm hạnh phúc từ những điều nhỏ nhặt nhất. 🎁💖",
+
+    // 9. Ngọt ngào, gắn kết
+    "Gửi đến {name} những lời chúc tốt đẹp và chân thành nhất từ tận đáy lòng. Cảm ơn vì em đã luôn ở đó, mang lại sự ấm áp, tiếng cười và niềm vui cho những người xung quanh. Chúc 20/10 của em thật rực rỡ, mong mọi nỗ lực và sự dịu dàng của em sẽ được đền đáp bằng thật nhiều yêu thương và hạnh phúc! 🌸🎀",
+
+    // 10. Tươi vui, rạng rỡ
+    "Chúc {name} của chúng ta ngày 20/10 nhận được thật nhiều quà, thật nhiều hoa và những lời chúc ngọt ngào tan chảy! Mong rằng nụ cười này sẽ luôn ở lại trên gương mặt em, không một nỗi buồn nào có thể ghé qua và mỗi bước chân em đi qua đều là thảm hoa của sự may mắn, thành công. 🎉🌷",
+
+    // 11. Sâu sắc, trưởng thành
+    "Trải qua bao nhiêu thăng trầm, điều tuyệt vời nhất là vẫn thấy {name} giữ nguyên được sự lương thiện, nụ cười rạng ngời và tinh thần lạc quan đáng quý. Nhân ngày Phụ nữ Việt Nam 20/10, chúc em luôn vững chãi trước sóng gió, mềm mại trước yêu thương, và mãi là đóa hoa đẹp nhất trong khu vườn cuộc sống. 🌿💐",
+
+    // 12. Hóm hỉnh nhưng tình cảm
+    "Cảnh báo: Nhân vật đang đọc dòng chữ này mang vẻ đẹp có thể làm lung lay cả một góc trời! Chúc {name} một ngày 20/10 ăn hoài không béo, tiền tiêu rủng rỉnh, tinh thần lúc nào cũng phơi phới như hoa mùa xuân và đặc biệt là phải luôn nhớ giữ gìn sức khỏe, cưng chiều bản thân thật nhiều nha! 🍰🌸",
+
+    // 13. Bình yên, an nhiên
+    "Đôi khi hạnh phúc lớn nhất không phải là những điều gì quá lớn lao, mà là được nhìn thấy {name}mỗi ngày đều bình an, mỉm cười và sống trọn vẹn với đam mê của mình. Chúc em ngày 20/10 thật nhẹ nhàng, tận hưởng từng phút giây thư thái và nhận được tất cả những món quà bất ngờ dễ thương nhất nhé! ☕️💌",
+
+    // 14. Đầy tự hào và kiêu hãnh
+    "Mỗi người phụ nữ đều là một đóa hoa mang hương sắc độc nhất vô nhị, và {name} chính là đóa hoa rực rỡ nhất trong lòng những người yêu thương em. Chúc em nhân ngày 20/10 luôn tự tin bước đi với vương miện của chính mình, kiêu hãnh, rạng ngời và luôn tràn ngập niềm tin yêu vào cuộc sống! 👑✨",
+
+    // 15. Trọn vẹn yêu thương
+    "Khép lại những mệt mỏi ngoài kia, hôm nay là ngày của {name} — ngày để em được ưu tiên số một trong mọi chuyện. Chúc em một bước chạm tới hạnh phúc, hai bước chạm tới bình yên, ba bước ngập tràn yêu thương. Chúc mừng 20/10 thật ý nghĩa, trọn vẹn và đáng nhớ nhất đối với em! 💖🌷"
+];
 
         // Hàm lấy lời chúc ngẫu nhiên nhưng không trùng với lần mở ngay trước đó
         function getRandomWish(name) {
